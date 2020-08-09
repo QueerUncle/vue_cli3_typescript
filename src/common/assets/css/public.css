@@ -1,0 +1,17 @@
+/* modal 取消按钮 */
+.cbim-cancel-btn {
+    border: none;
+}
+
+.cbim-cancel-btn:focus {
+    box-shadow: none !important;
+}
+
+/* 按钮宽度 */
+.cbim-btn-80 {
+    min-width: 80px;
+    border-radius: 2px;
+}
+.cbim-pointer{
+    cursor:pointer;
+}

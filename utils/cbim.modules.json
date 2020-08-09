@@ -1,0 +1,1 @@
+{"index":{"dontHotCompile":false,"detail":"","name":"index","path":"./src/pages/index","pages":{"index":{"path":"./src/pages/index/index","title":"index","entry":"./src/pages/index/index/main.ts","template":"public/index.html","filename":"index.html","chunks":["chunk-vendors","chunk-common","lib","runtime","index"]}}}}

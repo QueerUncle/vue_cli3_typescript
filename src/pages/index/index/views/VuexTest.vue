@@ -1,0 +1,77 @@
+<!--
+  @Author: lize
+  @Date: 2020/7/27
+  @Description :
+  @Parames :
+  @Example :
+  @Last Modified by: lize
+  @Last Modified time: 2020/7/27
+ -->
+<template>
+    <div class = "vuex-test-wrap">
+        <PageMenu/>
+        <div class = "content-wrap">
+            我是VuexTest
+            <ul>
+                <li style="display: flex;padding: 10px;">
+                    <div style="margin-right: 15px;">{{hasRender}}</div>
+<!--                    <Button type="primary" @click = "storeGetters">测试storeGetters</Button>-->
+                </li>
+                <li style="display: flex;padding: 10px;">
+                    <div style="margin-right: 15px;">{{hasRender}}</div>
+                    <Button type="primary" @click = "storeMutations">测试storeMutations</Button>
+                </li>
+                <li style="display: flex;padding: 10px;">
+                    <div style="margin-right: 15px;">{{hasRender}}</div>
+                    <Button type="primary" @click = "storeActions">测试storeActions</Button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</template>
+
+<script lang="ts">
+    import {Component, Vue} from 'vue-property-decorator';
+    import { Getter, Mutation, Action } from 'vuex-class';
+
+    @Component({
+        name: 'VuexTest',
+        components:{
+            PageMenu:() => import('../components/PageMenu.vue')
+        }
+    })
+    export default class VuexTest extends Vue {
+        @Getter('customStore/addTest') private hasRender: any; // 是否渲染
+
+        // 更新列表的顺序
+        @Mutation('customStore/testMutaions') private testMutaions: any;
+
+        @Action('customStore/testAction') private testAction: any;
+
+        // 测试Getters
+        storeGetters(){
+            console.log(this.hasRender);
+        }
+
+        // 测试Mutations
+        storeMutations(){
+            this.testMutaions(10);
+        }
+
+        // 测试 storeActions
+        storeActions(){
+            this.testAction('testMutaions',20);
+        }
+    }
+</script>
+
+<style scoped lang="less">
+    .vuex-test-wrap{
+        height: 100%;
+        display: flex;
+        .content-wrap{
+            flex:2;
+            overflow: auto;
+        }
+    }
+</style>

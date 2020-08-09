@@ -1,0 +1,101 @@
+@media print {
+  html,
+  body {
+    width: 958px !important;
+    min-width: 958px !important;
+    background: none !important;
+    font-size: 12px !important;
+  }
+  .bm-view {
+    height: 100% !important;
+  }
+  .create-print-wrap {
+    width: 100% !important;
+  }
+  .print-page {
+    page-break-after: always !important;
+  }
+  @page {
+    size: auto A4 landscape;
+    margin: 8mm 8mm 12mm;
+    /*margin:3mm;*/
+  }
+  .part .part-mask {
+    background: rgba(255, 255, 255, 0) !important;
+  }
+  .mark-lock-new td:before {
+    background: rgba(255, 255, 255, 0) !important;
+  }
+  .ellipsisTable {
+    width: 100% !important;
+    -webkit-line-clamp: 100 !important;
+  }
+  .printTitle {
+    visibility: inherit;
+    display: block !important;
+  }
+
+  .mainNode table {
+    width: 956px !important;
+  }
+  .mainNode table colgroup {
+    display: none;
+  }
+  .mainNode table tr td:nth-child(1) {
+    width: 40px !important;
+  }
+  .mainNode table tr td:nth-child(2) {
+    width: 80px !important;
+  }
+  .mainNode table tr td :nth-child(3) {
+    width: 95px !important;
+  }
+  .mainNode table tr td:nth-child(4) {
+    width: 115px !important;
+  }
+  .mainNode table tr td:nth-child(5) {
+    width: 80px !important;
+  }
+  .mainNode table tr td:nth-child(7) {
+    width: 80px !important;
+  }
+  .mainNode table tr td:nth-child(8) {
+    width: 80px !important;
+  }
+  .mainNode table tr td:nth-child(9) {
+    width: 80px !important;
+  }
+  .mainNode table tr td:nth-child(10) {
+    width: 80px !important;
+  }
+  .mainNode table tr th:nth-child(1) {
+    width: 40px !important;
+  }
+  .mainNode table tr th:nth-child(2) {
+    width: 80px !important;
+  }
+  .mainNode table tr th :nth-child(3) {
+    width: 95px !important;
+  }
+  .mainNode table tr th:nth-child(4) {
+    width: 115px !important;
+  }
+  .mainNode table tr th:nth-child(5) {
+    width: 80px !important;
+  }
+  .mainNode table tr th:nth-child(7) {
+    width: 80px !important;
+  }
+  .mainNode table tr th:nth-child(8) {
+    width: 80px !important;
+  }
+  .mainNode table tr th:nth-child(9) {
+    width: 80px !important;
+  }
+  .mainNode table tr th:nth-child(10) {
+    width: 80px !important;
+  }
+  .main-node table {
+    width: 100% !important;
+  }
+}

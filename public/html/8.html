@@ -1,0 +1,27 @@
+<!--
+  @Author: lize
+  @Date: 2020/5/13
+  @Description :
+  @Parames :
+  @Example :
+  @Last Modified by: lize
+  @Last Modified time: 2020/5/13
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id = "box"></div>
+</body>
+</html>
+<script>
+    window.onload = () =>{
+        var box = document.getElementById("box");
+        for(let i = 0; i< 100;i++){
+            box.innerHTML+="<p style = 'text-align: center'>我是第 <span style = 'font-size: 40px;color:green'>8</span>个测试页面,第<span style = 'font-size: 40px;color:red'>"+i+"</span>个元素</p>";
+        }
+    }
+</script>

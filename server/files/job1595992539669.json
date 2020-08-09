@@ -1,0 +1,482 @@
+[
+  {
+    "name": "招聘前端开发工程师",
+    "reward": "20-40k·12薪",
+    "area": "北京-海淀区",
+    "experience": "统招本科",
+    "company": {
+      "name": "公司汽车之家",
+      "href": "https://www.liepin.com/company/886182/",
+      "type": "",
+      "tag": "休闲餐点,上市公司,公司规模大,发展空间大,福利待遇好,办公环境舒适,薪资面谈"
+    }
+  },
+  {
+    "name": "招聘前端开发工程师（React）",
+    "reward": "15-25k·13薪",
+    "area": "深圳-南山区",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司蓝凌软件",
+      "href": "https://www.liepin.com/company/864375/",
+      "type": "",
+      "tag": "绩效奖金,带薪年假,岗位晋升,五险一金,弹性工作,公司规模大"
+    }
+  },
+  {
+    "name": "招聘APP前端开发专家（京东金融）",
+    "reward": "40-50k·12薪",
+    "area": "北京-呼家楼",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司京东数字科技控股有限公司",
+      "href": "https://www.liepin.com/company/215535/",
+      "type": "",
+      "tag": "年底双薪,绩效奖金,带薪年假,定期体检,免费班车,公司规模大"
+    }
+  },
+  {
+    "name": "招聘web前端开发工程师",
+    "reward": "8-10k·12薪",
+    "area": "广州",
+    "experience": "大专及以上",
+    "company": {
+      "name": "公司长视科技股份有限公司",
+      "href": "https://www.liepin.com/company/8838118/",
+      "type": "",
+      "tag": "领导好,技能培训,岗位晋升,发展空间大 "
+    }
+  },
+  {
+    "name": "招聘web前端开发工程师",
+    "reward": "11-20k·12薪",
+    "area": "上海",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司上海同余",
+      "href": "https://www.liepin.com/company/8852884/",
+      "type": "",
+      "tag": "领导好,技能培训,岗位晋升,发展空间大 "
+    }
+  },
+  {
+    "name": "招聘高级前端开发工程师",
+    "reward": "20-30k·12薪",
+    "area": "上海",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司上海同余",
+      "href": "https://www.liepin.com/company/8852884/",
+      "type": "",
+      "tag": "领导好,技能培训,岗位晋升,发展空间大 "
+    }
+  },
+  {
+    "name": "招聘前端开发工程师",
+    "reward": "15-25k·12薪",
+    "area": "上海",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司上海勘测设计研究院有限公司",
+      "href": "https://www.liepin.com/company/9820091/",
+      "type": "",
+      "tag": "绩效奖金,交通补助,通讯津贴,午餐补助,定期体检,免费班车,五险一金"
+    }
+  },
+  {
+    "name": "招聘Web前端开发工程师",
+    "reward": "12-15k·12薪",
+    "area": "深圳-龙岗区",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司广东省宏博伟智技术有限公司",
+      "href": "https://www.liepin.com/company/9764333/",
+      "type": "",
+      "tag": "领导好,技能培训,岗位晋升,发展空间大 "
+    }
+  },
+  {
+    "name": "招聘前端开发工程师",
+    "reward": "15-30k·12薪",
+    "area": "上海",
+    "experience": "统招本科",
+    "company": {
+      "name": "公司新浪时金(上海)信息技术有限公司",
+      "href": "https://www.liepin.com/company/10082777/",
+      "type": "",
+      "tag": "绩效奖金,带薪年假,定期体检,扁平管理,岗位晋升,上市公司,发展空间大,公司规模大"
+    }
+  },
+  {
+    "name": "招聘前端开发",
+    "reward": "10-20k·12薪",
+    "area": "上海",
+    "experience": "统招本科",
+    "company": {
+      "name": "公司新浪时金(上海)信息技术有限公司",
+      "href": "https://www.liepin.com/company/10082777/",
+      "type": "",
+      "tag": "绩效奖金,带薪年假,定期体检,扁平管理,岗位晋升,上市公司,发展空间大,公司规模大"
+    }
+  },
+  {
+    "name": "招聘语音前端开发实习生",
+    "reward": "5-7k·12薪",
+    "area": "上海",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司华人运通控股(上海)有限公司",
+      "href": "https://www.liepin.com/company/9949267/",
+      "type": "",
+      "tag": "五险一金,发展空间大"
+    }
+  },
+  {
+    "name": "招聘前端开发工程师",
+    "reward": "12-20k·12薪",
+    "area": "北京-回龙观",
+    "experience": "大专及以上",
+    "company": {
+      "name": "公司东软集团有限公司",
+      "href": "https://www.liepin.com/company/9278187/",
+      "type": "",
+      "tag": "带薪年假,交通补助,通讯津贴,岗位晋升,五险一金,上市公司,发展空间大,公司规模大,优秀员工奖"
+    }
+  },
+  {
+    "name": "招聘Web前端开发工程师",
+    "reward": "15-25k·15薪",
+    "area": "成都",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司美团点评",
+      "href": "https://www.liepin.com/company/2036768/",
+      "type": "",
+      "tag": "平台大,团队氛围好"
+    }
+  },
+  {
+    "name": "招聘前端开发专家",
+    "reward": "25-50k·16薪",
+    "area": "北京-望京",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司躺平设计家(上海)科技有限公司",
+      "href": "https://www.liepin.com/company/10124015/",
+      "type": "",
+      "tag": "绩效奖金,带薪年假,定期体检,弹性工作,节日礼物,扁平管理,五险一金,领导好,发展空间大,阿里控股"
+    }
+  },
+  {
+    "name": "招聘前端开发工程师",
+    "reward": "9-15k·14薪",
+    "area": "大连-甘井子区",
+    "experience": "统招本科",
+    "company": {
+      "name": "公司Infosys",
+      "href": "https://www.liepin.com/company/8546420/",
+      "type": "",
+      "tag": "带薪年假,弹性工作,定期体检,500强,上市公司,免费班车,交通补助,通讯津贴,年底双薪"
+    }
+  },
+  {
+    "name": "招聘web前端开发",
+    "reward": "3-6k·12薪",
+    "area": "黔西南",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司贵州华鑫智通科技有限公司",
+      "href": "https://www.liepin.com/company/12255201/",
+      "type": "",
+      "tag": "交通补助,通讯津贴,午餐补助,岗位晋升,五险一金"
+    }
+  },
+  {
+    "name": "招聘web前端开发工程师",
+    "reward": "7-15k·12薪",
+    "area": "郑州-高新区",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司河南八六三软件股份有限公司",
+      "href": "https://www.liepin.com/company/9643884/",
+      "type": "",
+      "tag": "领导好,技能培训,岗位晋升,发展空间大"
+    }
+  },
+  {
+    "name": "招聘Web前端开发工程师",
+    "reward": "7-10k·12薪",
+    "area": "广州-天河区",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司广州市凯泽利科技有限公司",
+      "href": "https://www.liepin.com/company/9855893/",
+      "type": "",
+      "tag": "带薪年假,年度旅游,节日礼物,管理规范,技能培训,五险一金,双休,住房补贴"
+    }
+  },
+  {
+    "name": "招聘高级前端开发工程师",
+    "reward": "20-40k·12薪",
+    "area": "上海",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司康语商务咨询(上海)有限公司",
+      "href": "https://www.liepin.com/company/8963109/",
+      "type": "",
+      "tag": "绩效奖金,带薪年假,弹性工作,年度旅游,岗位晋升,团队聚餐,休闲餐点,发展空间大"
+    }
+  },
+  {
+    "name": "招聘Laya前端开发工程师",
+    "reward": "7-12k·12薪",
+    "area": "广州",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司广州要玩娱乐网络技术股份有限公司",
+      "href": "https://www.liepin.com/company/1777275/",
+      "type": "",
+      "tag": "领导好,技能培训,岗位晋升,发展空间大 "
+    }
+  },
+  {
+    "name": "招聘web前端开发工程师",
+    "reward": "10-20k·12薪",
+    "area": "南京-江宁区",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司特变电工南京智能电气有限公司",
+      "href": "https://www.liepin.com/company/8052428/",
+      "type": "",
+      "tag": "领导好,技能培训,岗位晋升,发展空间大"
+    }
+  },
+  {
+    "name": "招聘web前端开发工程师",
+    "reward": "4-8k·12薪",
+    "area": "孝感",
+    "experience": "大专及以上",
+    "company": {
+      "name": "公司湖北兵者智能科技有限公司",
+      "href": "https://www.liepin.com/company/12250365/",
+      "type": "",
+      "tag": ""
+    }
+  },
+  {
+    "name": "招聘 Vue前端开发工程师",
+    "reward": "8-15k·12薪",
+    "area": "深圳-南山区",
+    "experience": "大专及以上",
+    "company": {
+      "name": "公司怡化电脑",
+      "href": "https://www.liepin.com/company/7982909/",
+      "type": "",
+      "tag": "通讯津贴,午餐补助,定期体检,岗位晋升,五险一金,领导好,发展空间大"
+    }
+  },
+  {
+    "name": "招聘高级前端开发工程师",
+    "reward": "12-15k·12薪",
+    "area": "武汉-江岸区",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司武汉东天红数字科技有限公司",
+      "href": "https://www.liepin.com/company/10273691/",
+      "type": "",
+      "tag": "领导好,技能培训,岗位晋升,发展空间大 "
+    }
+  },
+  {
+    "name": "招聘前端开发组长",
+    "reward": "8-10k·12薪",
+    "area": "武汉",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司武汉东天红数字科技有限公司",
+      "href": "https://www.liepin.com/company/10273691/",
+      "type": "",
+      "tag": "领导好,技能培训,岗位晋升,发展空间大 "
+    }
+  },
+  {
+    "name": "招聘高级前端开发工程师",
+    "reward": "15-25k·12薪",
+    "area": "杭州-滨江区",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司杭州财人汇网络股份有限公司",
+      "href": "https://www.liepin.com/company/8631590/",
+      "type": "",
+      "tag": "带薪年假,午餐补助,定期体检,节日礼物,五险一金"
+    }
+  },
+  {
+    "name": "招聘前端开发工程师",
+    "reward": "6-10k·12薪",
+    "area": "温州",
+    "experience": "大专及以上",
+    "company": {
+      "name": "公司浙江朗诗德",
+      "href": "https://www.liepin.com/company/8019323/",
+      "type": "",
+      "tag": "绩效奖金,午餐补助,定期体检,节日礼物,扁平管理,五险一金,团队聚餐,领导好,发展空间大,提供免费住宿"
+    }
+  },
+  {
+    "name": "招聘前端开发工程师（云票儿深圳）(J10624)",
+    "reward": "15-25k·15薪",
+    "area": "深圳-科技园",
+    "experience": "统招本科",
+    "company": {
+      "name": "公司海南高灯科技有限公司",
+      "href": "https://www.liepin.com/company/9468371/",
+      "type": "",
+      "tag": "年底双薪,绩效奖金,交通补助,岗位晋升,五险一金,发展空间大,弹性工作,定期体检,年度旅游,节日礼物"
+    }
+  },
+  {
+    "name": "招聘WEB前端开发工程师",
+    "reward": "12-20k·12薪",
+    "area": "深圳",
+    "experience": "硕士及以上",
+    "company": {
+      "name": "公司安吉康尔(深圳)科技有限公司",
+      "href": "https://www.liepin.com/company/9127399/",
+      "type": "",
+      "tag": "领导好,技能培训,岗位晋升,发展空间大 "
+    }
+  },
+  {
+    "name": "招聘前端开发",
+    "reward": "7-12k·12薪",
+    "area": "大连-七贤岭",
+    "experience": "大专及以上",
+    "company": {
+      "name": "公司诺派(大连)科技有限公司",
+      "href": "https://www.liepin.com/company/10155077/",
+      "type": "",
+      "tag": "管理规范,五险一金,领导好"
+    }
+  },
+  {
+    "name": "招聘web前端开发工程师",
+    "reward": "13-25k·12薪",
+    "area": "深圳-科技园",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司盈富斯",
+      "href": "https://www.liepin.com/company/8523739/",
+      "type": "",
+      "tag": "五险一金,发展空间大,扁平管理,弹性工作,休闲餐点"
+    }
+  },
+  {
+    "name": "招聘前端开发工程师 0100271",
+    "reward": "8-23k·13薪",
+    "area": "深圳-龙华区",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司工业富联",
+      "href": "https://www.liepin.com/company/9580430/",
+      "type": "",
+      "tag": "技能培训,岗位晋升,领导好,发展空间大"
+    }
+  },
+  {
+    "name": "招聘前端开发工程师G00993",
+    "reward": "15-25k·12薪",
+    "area": "上海-杨浦区",
+    "experience": "统招本科",
+    "company": {
+      "name": "公司诺亚控股",
+      "href": "https://www.liepin.com/company/8692230/",
+      "type": "",
+      "tag": "带薪年假,弹性工作,年度旅游,节日礼物,技能培训,五险一金,团队聚餐,上市公司,领导好,发展空间大"
+    }
+  },
+  {
+    "name": "招聘前端开发工程师",
+    "reward": "7-10k·12薪",
+    "area": "大连-沙河口区",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司软通动力",
+      "href": "https://www.liepin.com/company/7865459/",
+      "type": "",
+      "tag": "五险一金,节日礼物,公司规模大,上市公司,带薪年假,定期体检,团队聚餐,管理规范,技能培训,岗位晋升"
+    }
+  },
+  {
+    "name": "招聘前端开发工程师（社招）",
+    "reward": "16-32k·13薪",
+    "area": "北京",
+    "experience": "统招本科",
+    "company": {
+      "name": "公司中国移动通信有限公司研究院",
+      "href": "https://www.liepin.com/company/9122701/",
+      "type": "",
+      "tag": "年底双薪,绩效奖金,带薪年假,午餐补助,五险一金"
+    }
+  },
+  {
+    "name": "招聘高级前端/前端开发工程师",
+    "reward": "18-35k·13薪",
+    "area": "深圳-南山区",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司风变科技(深圳)有限公司",
+      "href": "https://www.liepin.com/company/8869838/",
+      "type": "",
+      "tag": "带薪年假,定期体检,扁平管理,五险一金,发展空间大,商业保险"
+    }
+  },
+  {
+    "name": "招聘前端开发工程师 (MJ000788)",
+    "reward": "20-30k·13薪",
+    "area": "广州-番禺区",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司欢聚集团",
+      "href": "https://www.liepin.com/company/930104/",
+      "type": "",
+      "tag": "年底双薪,定期体检,公司规模大,领导好,扁平管理,上市公司,绩效奖金,年度旅游"
+    }
+  },
+  {
+    "name": "招聘高级前端开发工程师（云平台）",
+    "reward": "15-30k·12薪",
+    "area": "深圳",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司风变科技(深圳)有限公司",
+      "href": "https://www.liepin.com/company/8869838/",
+      "type": "",
+      "tag": "领导好,技能培训,岗位晋升,发展空间大 "
+    }
+  },
+  {
+    "name": "招聘WEB前端开发工程师",
+    "reward": "6-10k·12薪",
+    "area": "上海",
+    "experience": "本科及以上",
+    "company": {
+      "name": "公司凯秘克(上海)环保科技有限公司",
+      "href": "https://www.liepin.com/company/12243405/",
+      "type": "",
+      "tag": ""
+    }
+  },
+  {
+    "name": "招聘前端开发工程师（嘉定安亭）",
+    "reward": "10-20k·13薪",
+    "area": "上海",
+    "experience": "大专及以上",
+    "company": {
+      "name": "公司初米网络科技(上海)有限公司",
+      "href": "https://www.liepin.com/company/8707200/",
+      "type": "",
+      "tag": "带薪年假,年底双薪,弹性工作,技能培训,扁平管理,领导好"
+    }
+  }
+]
