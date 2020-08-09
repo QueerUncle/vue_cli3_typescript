@@ -14,7 +14,7 @@
 <!--                <i class = "iconfont icongengduocaozuo-hengxiang" @click = "openMenu"></i>-->
                 <i class = "iconfont iconview-list" @click = "openMenu"></i>
             </Tooltip>
-            <img src="../assets/img/cbim_logo_transverse.png" @click="goHome" alt="Cbim Logo">
+            <img src="../assets/img/background_home.png" @click="goHome" alt="Cbim Logo">
         </div>
         <div class="user-warp">
             <div class="app" @click="goToApp"><i class="iconfont iconyingyonghui"></i></div>
@@ -26,7 +26,7 @@
             <div class="app"></div>
             <span class="division"></span>
             <div class="portrait" v-if="$store.state.userInfo">
-                <img v-if="$store.state.userInfo.image === '' " src="../assets/img/default_portrait.png" alt="default">
+                <img v-if="$store.state.userInfo.image === '' " src="../assets/img/background_home.png" alt="default">
                 <img v-else :src="$store.state.userInfo.image" alt="img">
             </div>
             <Dropdown trigger="click" @on-visible-change="dropdownChange" @on-click="onDropdownItemClick">
