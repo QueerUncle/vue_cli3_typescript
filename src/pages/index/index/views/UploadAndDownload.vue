@@ -8,7 +8,7 @@
   @Last Modified time: 2020/6/11
  -->
 <template>
-    <div class = "UploadAndDownLoad-wrap">
+    <div class = "UploadAndDownLoad-wrap main-wrap">
         <PageMenu/>
         <div class = "conent-wrap">
             UploadAndDownLoad
@@ -29,11 +29,7 @@
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
 
-    @Component({
-        components:{
-            PageMenu:() => import('../components/PageMenu.vue')
-        }
-    })
+    @Component
     export default class UploadAndDownload extends Vue {
         private uploadFiles = [];
         created(){

@@ -8,7 +8,7 @@
   @Last Modified time: 2020/5/18
  -->
 <template>
-    <div class = "ts-practice-wrap">
+    <div class = "ts-practice-wrap main-wrap">
         <PageMenu/>
         <div class = "content-wrap">
             我是ts-practice-wrap
@@ -24,11 +24,7 @@
     }
     import { Component, Vue } from 'vue-property-decorator';
     // import '../interface'
-    @Component({
-        components:{
-            PageMenu:() => import('../components/PageMenu.vue')
-        }
-    })
+    @Component
     export default class TsPractice extends Vue {
 
         private myObj = { sizesssssss: 20, label: "Size 10 Object" };

@@ -8,7 +8,7 @@
   @Last Modified time: 2020/8/7
  -->
 <template>
-    <div class = "keep-alive-wrap">
+    <div class = "keep-alive-wrap main-wrap">
         <PageMenu/>
         <div class = "content-wrap">
             <keep-alive include = "KeepAliveCom1">
@@ -28,7 +28,6 @@
     @Component({
         name: 'KeepAliveTem',
         components: {
-            PageMenu:() => import('../components/PageMenu.vue'),
             KeepAliveCom1: () => import('../components/KeepAliveCom1.vue'),
             KeepAliveCom2: () => import('../components/KeepAliveCom2.vue'),
             KeepAliveCom3: () => import('../components/KeepAliveCom3.vue'),

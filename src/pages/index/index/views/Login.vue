@@ -8,7 +8,7 @@
   @Last Modified time: 2020/6/9
  -->
 <template>
-    <div class = "login-wrap">
+    <div class = "login-wrap main-wrap">
         <PageMenu/>
         <div class = "conent-wrap">
             我是login页面
@@ -45,11 +45,7 @@
 <script lang="ts">
     import { Component, Vue } from 'vue-property-decorator';
 
-    @Component({
-        components:{
-            PageMenu:() => import('../components/PageMenu.vue')
-        }
-    })
+    @Component
     export default class Login extends Vue {
         private FormDataSubmitDatas: any = {
             userNames:'',

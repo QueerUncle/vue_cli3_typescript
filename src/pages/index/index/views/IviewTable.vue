@@ -8,7 +8,7 @@
   @Last Modified time: 2020/5/18
  -->
 <template>
-    <div class = "iview-table-wrap">
+    <div class = "iview-table-wrap main-wrap">
         <PageMenu/>
         <div class = "conent-wrap">
             <div style="display: flex;align-items: flex-start;margin: 20px;">
@@ -38,11 +38,7 @@
 <script lang="ts">
     import {Component, Vue, Watch} from 'vue-property-decorator';
 
-    @Component({
-        components:{
-            PageMenu:() => import('../components/PageMenu.vue')
-        }
-    })
+    @Component
     export default class IviewTable extends Vue {
         private tableAllCheckboxStatus: boolean = false;   //全选按钮状态
         private checkboxType: string = "radio"  //radio 单选 multiple  多选

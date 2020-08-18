@@ -32,7 +32,9 @@
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
 
-    @Component
+    @Component({
+        name: 'PageMenu',
+    })
     export default class PageMenu extends Vue {
         private activeName: string = '/';
         private menuData: any[] = [
@@ -95,6 +97,16 @@
                 title:'KeepAliveTem.vue',
                 href:'',
                 router:'/KeepAliveTem'
+            },
+            {
+                title:'ScrollIvewTable.vue',
+                href:'',
+                router:'/ScrollIvewTable'
+            },
+            {
+                title:'ES6.vue',
+                href:'',
+                router:'/ES6'
             },
         ]
         created(): void{

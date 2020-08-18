@@ -70,6 +70,16 @@ Vue.use(VueRouter)
       name: 'KeepAliveTem',
       component: () => import("../views/KeepAliveTem.vue")
     },
+    {
+      path: '/ScrollIvewTable',
+      name: 'ScrollIvewTable',
+      component: () => import("../views/ScrollIvewTable.vue")
+    },
+    {
+      path: '/ES6',
+      name: 'ES6',
+      component: () => import("../views/ES6.vue")
+    },
 
 ]
 

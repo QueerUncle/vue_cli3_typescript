@@ -8,7 +8,7 @@
   @Last Modified time: 2020/7/30
  -->
 <template>
-    <div class = "Worker-wrap" style="height:100%;display:flex">
+    <div class = "Worker-wrap main-wrap" style="height:100%;display:flex">
         <PageMenu />
         <div class = "content-wrap" style="flex:2;overflow:auto;display:flex;justify-content:space-between;">
 <!--            <div class = "left-wrap">-->
@@ -45,9 +45,6 @@ import {Component, Vue} from 'vue-property-decorator';
 
 @Component({
     name: 'WorkerTest',
-    components: {
-        PageMenu:() => import('@/pages/index/index/components/PageMenu.vue')
-    }
 })
 export default class WorkerTest extends Vue {
     private leftList: number[] = [1,2,3];

@@ -8,7 +8,7 @@
   @Last Modified time: 2020/5/13
  -->
 <template>
-    <div class = "index-wrap">
+    <div class = "index-wrap main-wrap">
         <PageMenu/>
         <div style="margin:15px; " class = "conent-wrap">
             <p>我是index页面</p>
@@ -66,7 +66,6 @@
     @Component({
         components:{
             ChildComponents:() => import('./ChildComponents.vue'),
-            PageMenu:() => import('../components/PageMenu.vue'),
             IViewModal:() => import('../components/IViewModal.vue'),
             IViewModal2:() => import('../components/IViewModal2.vue')
         }

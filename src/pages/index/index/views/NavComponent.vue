@@ -8,7 +8,7 @@
   @Last Modified time: 2020/6/9
  -->
 <template>
-    <div class = "NavComponent-wrap">
+    <div class = "NavComponent-wrap main-wrap">
         <PageMenu/>
         <div class = "conent-wrap">
             <ul>
@@ -29,11 +29,7 @@
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
 
-    @Component({
-        components:{
-            PageMenu:() => import('../components/PageMenu.vue')
-        }
-    })
+    @Component
     export default class NavComponent extends Vue {
         private navList = [
             {

@@ -8,7 +8,7 @@
   @Last Modified time: 2020/7/27
  -->
 <template>
-    <div class = "vuex-test-wrap">
+    <div class = "vuex-test-wrap main-wrap">
         <PageMenu/>
         <div class = "content-wrap">
             我是VuexTest
@@ -36,9 +36,6 @@
 
     @Component({
         name: 'VuexTest',
-        components:{
-            PageMenu:() => import('../components/PageMenu.vue')
-        }
     })
     export default class VuexTest extends Vue {
         @Getter('customStore/addTest') private hasRender: any; // 是否渲染
