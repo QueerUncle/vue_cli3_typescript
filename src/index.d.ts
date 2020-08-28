@@ -11,7 +11,8 @@ import Vue from 'vue'
 declare module "vue/types/vue" {
     interface Vue {
         $Http: any
-        selectAll:Function,
+        selectAll: Function,
+        $UtilsTools: any,
     }
 }
 declare namespace Global {

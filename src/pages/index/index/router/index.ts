@@ -80,6 +80,16 @@ Vue.use(VueRouter)
       name: 'ES6',
       component: () => import("../views/ES6.vue")
     },
+    {
+      path: '/TreeVue',
+      name: 'TreeVue',
+      component: () => import("../views/TreeVue.vue")
+    },
+    {
+      path: '/CustomTreeVue',
+      name: 'CustomTreeVue',
+      component: () => import("../views/CustomTreeVue.vue")
+    },
 
 ]
 

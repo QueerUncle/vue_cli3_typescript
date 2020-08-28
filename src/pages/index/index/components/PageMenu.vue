@@ -108,6 +108,16 @@
                 href:'',
                 router:'/ES6'
             },
+            {
+                title:'TreeVue.vue',
+                href:'',
+                router:'/TreeVue'
+            },
+            {
+                title:'CustomTreeVue.vue',
+                href:'',
+                router:'/CustomTreeVue'
+            },
         ]
         created(): void{
             this.initialize();
