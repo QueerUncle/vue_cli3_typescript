@@ -34,10 +34,53 @@
                         name:'节点2',
                         children:[
                             {
-                                name:'节点3'
+                                name:'节点3',
+                                children:[
+                                    {
+                                        name:'节点3',
+                                        children:[
+                                            {
+                                                name:'节点3'
+                                            },
+                                            {
+                                                name:'节点4'
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        name:'节点4',
+                                        children:[
+                                            {
+                                                name:'节点3',
+                                                children:[
+                                                    {
+                                                        name:'节点3'
+                                                    },
+                                                    {
+                                                        name:'节点4',
+                                                        children:[
+                                                            {
+                                                                name:'节点3'
+                                                            },
+                                                            {
+                                                                name:'节点4'
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                name:'节点4'
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 name:'节点4'
+                            },
+                            {
+                                name:'节点5'
                             }
                         ]
                     }
