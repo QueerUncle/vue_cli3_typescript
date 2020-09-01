@@ -67,7 +67,7 @@
         // 点击树节点
         @Emit('on-flowItem-click') onFlowItemClick(item: any): any {} // eslint-disable-line
 
-        // 当前状态
+        // 当前状态 edit表示编辑
         @Prop() type: string;
 
         // 流程图数据
