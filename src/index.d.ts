@@ -13,6 +13,8 @@ declare module "vue/types/vue" {
         $Http: any
         selectAll: Function,
         $UtilsTools: any,
+        AreaData: any,
+        ProcessTree: any,
     }
 }
 declare namespace Global {
@@ -25,3 +27,4 @@ declare namespace Global {
 }
 declare module "cbimui";
 declare module "MessageConfig"
+declare module 'ProcessTreeVue';

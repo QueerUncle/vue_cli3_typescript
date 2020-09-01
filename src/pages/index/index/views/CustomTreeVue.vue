@@ -11,7 +11,7 @@
     <div class = "custom-tree-vue">
         <PageMenu/>
         <div class = "content-wrap">
-            <CustomTree :data = "CustomTreeData" />
+            <CustomTree type = "look" :flowChartData = "flowChartData" />
         </div>
     </div>
 </template>
@@ -22,71 +22,36 @@
     @Component({
         name: 'CustomTreeVue',
         components: {
-            CustomTree: () => import('@/pages/index/index/components/CustomTree.vue'),
+            CustomTree: () => import('@/pages/index/index/components/CustomTree/CustomTree.vue'),
         }
     })
     export default class CustomTreeVue extends Vue {
-        public CustomTreeData: Array<any> = [
-            {
-                name:'节点1',
+        public flowChartData: Array<any> = [
+          {
+            name: '节点1',
+            children: [
+              {
+                name: '节点2',
                 children:[
-                    {
-                        name:'节点2',
-                        children:[
-                            {
-                                name:'节点3',
-                                children:[
-                                    {
-                                        name:'节点3',
-                                        children:[
-                                            {
-                                                name:'节点3'
-                                            },
-                                            {
-                                                name:'节点4'
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        name:'节点4',
-                                        children:[
-                                            {
-                                                name:'节点3',
-                                                children:[
-                                                    {
-                                                        name:'节点3'
-                                                    },
-                                                    {
-                                                        name:'节点4',
-                                                        children:[
-                                                            {
-                                                                name:'节点3'
-                                                            },
-                                                            {
-                                                                name:'节点4'
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                name:'节点4'
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                name:'节点4'
-                            },
-                            {
-                                name:'节点5'
-                            }
-                        ]
-                    }
+                  {
+                    name: '节点3',
+                    children:[
+                      {
+                        name: '节点4'
+                      },
+                      {
+                        name: '节点5'
+                      },
+                      {
+                        name: '节点6'
+                      },
+                    ]
+                  }
                 ]
-            },
-        ]
+              }
+            ]
+          }
+        ];
     }
 </script>
 
@@ -94,6 +59,9 @@
     .custom-tree-vue{
         height: 100%;
         display: flex;
+        background: #ffffff;
+        padding: 20px;
+        overflow: auto;
         .content-wrap {
             flex: 2;
             overflow: auto;
