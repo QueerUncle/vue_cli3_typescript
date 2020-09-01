@@ -91,7 +91,7 @@
         // 添加自定义id
         convert(arr: Array<any>): any {
             return arr.map((item: any) => {
-                item.uuid = this.$UtilsTools.uuid();
+                item.uuid = this.$UtilTools.uuid();
                 if (item.children && item.children.length > 0) {
                     item.children = this.convert(item.children);
                 }

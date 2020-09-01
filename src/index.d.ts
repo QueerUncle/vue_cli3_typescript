@@ -12,7 +12,7 @@ declare module "vue/types/vue" {
     interface Vue {
         $Http: any
         selectAll: Function,
-        $UtilsTools: any,
+        $UtilTools: any,
         AreaData: any,
         ProcessTree: any,
     }

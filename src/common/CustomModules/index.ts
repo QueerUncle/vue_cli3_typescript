@@ -17,7 +17,7 @@ export {
 };
 
 const install = (Vue: any) => {
-    Vue.prototype.$UtilsTools = UtilsTools;
+    Vue.prototype.$UtilTools = UtilsTools;
     Vue.prototype.$MyPromise = MyPromise;
 }
 
