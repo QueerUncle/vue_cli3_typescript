@@ -11,6 +11,8 @@ const utils = require('../../utils/index.js');
 const Http = require('../../utils/Ajax.js');
 module.exports = {
     testapiGetMethods(req,res) {
+        const a = req;
+        const b = a.query;
         res.send(
             {
                 code:200,
