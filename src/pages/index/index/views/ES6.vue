@@ -93,6 +93,8 @@
             console.log(arr[-1]);
             this.proxyCreateDom();
             this.testClass();
+            console.log(this.add(1)(2)(3) + '', 'asdasdasdasdasda');
+
         }
 
         init(){
@@ -176,15 +178,15 @@
             });
         }
 
-        testClass(){
+        testClass(): void {
             class A{
                 private x: number;
                 constructor() {
                     this.x = 1;
                 }
             }
+
             class B extends A {
-                private x: number;
                 constructor() {
                     super();
                     // this.x = 2;
@@ -194,6 +196,19 @@
             }
             const b = new B();
             console.log(b, '我是BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB');
+        }
+
+        add(): any {
+            // const agrs: any = [].slice.call(rest);
+            const agrs: any = Array.from(arguments); // eslint-disable-line
+            const fn = () => {
+                const fn_args: any = [].slice.call(arguments); // eslint-disable-line
+                return this.add.apply(null, agrs.concat(fn_args))
+            }
+            fn.valueOf = () => {
+                return agrs.reduce((a: any, b: any ) => a + b);
+            }
+            return fn;
         }
     }
 </script>

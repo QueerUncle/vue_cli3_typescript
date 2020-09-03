@@ -11,7 +11,7 @@
     <div class = "login-wrap main-wrap">
         <PageMenu/>
         <div class = "conent-wrap">
-            我是login页面
+            <span class = "text-wrap" :style = "{'--color': 'pink'}">我是login页面</span>
             <div class="form-wrap">
                 <h2>form</h2>
                 <form action="/node/api/formlogin" method="post" target="stop">
@@ -47,6 +47,7 @@
 
     @Component
     export default class Login extends Vue {
+        private color = "red";
         private FormDataSubmitDatas: any = {
             userNames:'',
             passWords:'',
@@ -111,13 +112,16 @@
     }
 </script>
 
-<style scoped lang="less">
+<style scoped lang="less" vars = "{ color }">
     .login-wrap{
         height: 100%;
         display: flex;
         .conent-wrap{
             flex: 2;
             overflow: auto;
+            .text-wrap{
+                color: var(--color);
+            }
         }
     }
 </style>
