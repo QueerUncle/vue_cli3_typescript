@@ -12,7 +12,8 @@
         <PageMenu/>
         <div style="margin:15px; " class = "conent-wrap">
             <p>我是index页面</p>
-            <ChildComponents ref = "bbb" />
+            <p>传给自组件的原始值：{{title}}</p>
+            <ChildComponents ref = "bbb" :title.sync = "title" />
             <Button type="primary" @click = "Primary">调取子组件方法</Button>
             <Form ref="formInline" :model="formInline" :rules="ruleInline" inline>
                 <FormItem prop="user">
@@ -71,6 +72,7 @@
         }
     })
     export default class IndexPage extends Vue {
+        private title = "asdasdasd";
         private value1 = [];
         private res_s = ['140000'];
         private alSelector = true;

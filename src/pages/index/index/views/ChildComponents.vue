@@ -8,16 +8,33 @@
   @Last Modified time: 2020/5/14
  -->
 <template>
-    <div>我是自组件</div>
+    <div>
+        <p @click = "textClick">{{$props.title}}</p>
+    </div>
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from 'vue-property-decorator';
+    import {
+        Component, Vue, Prop, Emit,
+    } from 'vue-property-decorator';
 
     @Component
     export default class ChildComponents extends Vue {
+        @Prop({
+            type: String,
+        }) title;
+
+        @Emit('update:title')
+        titleChange(newValue: any): any{
+            return newValue
+        }
+
         private asd(): void{
             console.log("我是字组件")
+        }
+
+        private textClick(): void {
+            this.titleChange('我是自组件返回来的！');
         }
     }
 </script>
