@@ -12,6 +12,7 @@
         <PageMenu/>
         <div class = "content-wrap">
             我是VuexTest
+            <div>state: {{ABC}}</div>
             <ul>
                 <li style="display: flex;padding: 10px;">
                     <div style="margin-right: 15px;">{{hasRender}}</div>
@@ -32,12 +33,15 @@
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import { Getter, Mutation, Action } from 'vuex-class';
+    import { State, Getter, Mutation, Action } from 'vuex-class';
+    import customStore from "@/pages/index/index/store/customStore";
 
     @Component({
         name: 'VuexTest',
     })
     export default class VuexTest extends Vue {
+        @State((state) => state.customStore.a) private ABC: any;
+
         @Getter('customStore/addTest') private hasRender: any; // 是否渲染
 
         // 更新列表的顺序
