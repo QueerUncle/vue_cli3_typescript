@@ -34,7 +34,6 @@
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
     import { State, Getter, Mutation, Action } from 'vuex-class';
-    import customStore from "@/pages/index/index/store/customStore";
 
     @Component({
         name: 'VuexTest',
