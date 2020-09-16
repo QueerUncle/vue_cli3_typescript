@@ -118,6 +118,16 @@
                 href:'',
                 router:'/CustomTreeVue'
             },
+            {
+                title:'BpmJs.vue',
+                href:'',
+                router:'/BpmJs'
+            },
+            {
+                title:'BpmVue.vue',
+                href:'',
+                router:'/BpmVue'
+            },
         ]
         created(): void{
             this.initialize();

@@ -90,6 +90,16 @@ Vue.use(VueRouter)
       name: 'CustomTreeVue',
       component: () => import("../views/CustomTreeVue.vue")
     },
+    {
+      path: '/BpmJs',
+      name: 'BpmJs',
+      component: () => import("../views/BpmJs.vue")
+    },
+    {
+      path: '/BpmVue',
+      name: 'BpmVue',
+      component: () => import("../views/BpmVue.vue")
+    },
 
 ]
 

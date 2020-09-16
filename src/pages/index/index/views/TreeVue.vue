@@ -57,7 +57,11 @@
                             {name:'节点33',
                                 children:[
                                     {name:'节点3'},
-                                    {name:'节点3'},
+                                    {name:'节点3',
+                                        children:[
+                                            {name: '节点44'}
+                                        ]
+                                    },
                                     {name:'节点3'}
                                 ]
                             }
@@ -77,6 +81,7 @@
     .content-wrap {
         flex: 2;
         overflow: auto;
+        position: relative;
     }
 }
 </style>
