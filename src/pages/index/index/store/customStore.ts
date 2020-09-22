@@ -13,10 +13,16 @@ import {
 const customState: any = {
     a: 1,
     b: 2,
+    c: []
 }
 const customGetters = {
     addTest(state: any){
-        return state.a + state.b;
+        return {
+            a:state.a,
+            b:state.b,
+            val: state.a + state.b,
+            c:state.c
+        }
     }
 }
 const customMutations: MutationTree<any> = {

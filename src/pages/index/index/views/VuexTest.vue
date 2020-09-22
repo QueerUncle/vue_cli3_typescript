@@ -15,8 +15,8 @@
             <div>state: {{ABC}}</div>
             <ul>
                 <li style="display: flex;padding: 10px;">
-                    <div style="margin-right: 15px;">{{hasRender}}</div>
-<!--                    <Button type="primary" @click = "storeGetters">测试storeGetters</Button>-->
+                    <div style="margin-right: 15px;">{{hasRender.a}}</div>
+                    <Button type="primary" @click = "storeGetters">测试storeGetters</Button>
                 </li>
                 <li style="display: flex;padding: 10px;">
                     <div style="margin-right: 15px;">{{hasRender}}</div>
@@ -27,6 +27,8 @@
                     <Button type="primary" @click = "storeActions">测试storeActions</Button>
                 </li>
             </ul>
+          <input type="text" @change = "getInputValue">
+<!--          <Button type="primary" @click = "getInputValue">获取input值</Button>-->
         </div>
     </div>
 </template>
@@ -40,6 +42,8 @@
     })
     export default class VuexTest extends Vue {
         @State((state) => state.customStore.a) private ABC: any;
+
+        @State((state) => state.customStore.c) private C: any;
 
         @Getter('customStore/addTest') private hasRender: any; // 是否渲染
 
@@ -62,6 +66,12 @@
         storeActions(){
             this.testAction('testMutaions',20);
         }
+
+      getInputValue(e){
+        this.$set(this.hasRender['c'], 0, e.target.value);
+        console.log(this.C);
+        console.log(this.hasRender);
+      }
     }
 </script>
 
