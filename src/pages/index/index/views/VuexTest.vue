@@ -67,7 +67,7 @@
             this.testAction('testMutaions',20);
         }
 
-      getInputValue(e){
+      getInputValue(e: any){
         this.$set(this.hasRender['c'], 0, e.target.value);
         console.log(this.C);
         console.log(this.hasRender);
