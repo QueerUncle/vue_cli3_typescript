@@ -20,9 +20,7 @@
 
     @Component
     export default class ChildComponents extends Vue {
-        @Prop({
-            type: String,
-        }) title;
+        @Prop() title: string | undefined;
 
         @Emit('update:title')
         titleChange(newValue: any): any{

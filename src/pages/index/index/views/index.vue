@@ -57,7 +57,8 @@
 
 <script lang="ts">
     import { Component, Vue } from 'vue-property-decorator';
-    import AreaData from '@/common/assets/js/areaData.js';
+    // import AreaData from '@/common/assets/js/areaData.js';
+    const AreaData = require('@/common/assets/js/areaData.js');
 
     Component.registerHooks([
         'beforeRouteEnter',

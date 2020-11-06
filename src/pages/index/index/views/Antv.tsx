@@ -25,22 +25,27 @@ export default class Antv extends Vue {
             {
                 id: 'c1',
                 label: 'c1',
+                leftIcon: '1',
                 children: [
                     {
                         id: 'c1-1',
                         label: 'c1-1',
+                        leftIcon: '2',
                     },
                     {
                         id: 'c1-2',
                         label: 'c1-2',
+                        leftIcon: '3',
                         children: [
                             {
                                 id: 'c1-2-1',
-                                label: 'c1-2-1'
+                                label: 'c1-2-1',
+                                leftIcon: '4',
                             },
                             {
                                 id: 'c1-2-2',
-                                label: 'c1-2-2'
+                                label: 'c1-2-2',
+                                leftIcon: '5',
                             },
                         ]
                     },
@@ -48,7 +53,8 @@ export default class Antv extends Vue {
             },
             {
                 id: 'c2',
-                label: 'c2'
+                label: 'c2',
+                leftIcon: '6',
             },
             // {
             //     id: 'c3',
@@ -157,6 +163,7 @@ export default class Antv extends Vue {
                  *    img: ''
                  *  }
                  */
+                console.log(cfg.leftIcon, 'cfg.leftIcon');
                 if (cfg.leftIcon) {
                     const { style, img } = cfg.leftIcon
                     // group.addShape('rect', {
@@ -417,3 +424,259 @@ export default class Antv extends Vue {
         )
     }
 }
+// G6.registerNode('flow-rect', {
+//     shapeType: 'flow-rect',
+//     draw: function drawShape(cfg: any, group: any) {
+//         const { name = '', lightColor, hasChildren, label, rate, collapsed } = cfg;
+//         const rectConfig = {
+//             width: 184, // 宽
+//             height: 74, // 高
+//             lineWidth: 1, // 边框
+//             fontSize: 12, // 字体大小
+//             fill: '#fff', //填充颜色
+//             radius: 4, // 边框弧度
+//             stroke: lightColor, // 边框颜色
+//             opacity: 1, // 透明度
+//         };
+//
+//         const textConfig = {
+//             textAlign: 'left', // 居左
+//             textBaseline: 'top', //
+//         };
+//
+//         // 壳子
+//         const rect = group.addShape('rect', {
+//             attrs: {
+//                 x: 0,
+//                 y: 0,
+//                 ...rectConfig,
+//             },
+//         });
+//         // 左侧线条
+//         group.addShape('rect', {
+//             attrs: {
+//                 x: 0,
+//                 y: 0,
+//                 width:4,
+//                 height: 74, // 高
+//                 lineWidth: 1, // 边框
+//                 fill: cfg.color,
+//                 radius: 4, // 边框弧度
+//                 opacity: 1, // 透明度
+//             },
+//         });
+//         // 文字
+//         group.addShape('text', {
+//             attrs: {
+//                 ...textConfig,
+//                 x: 12,
+//                 y: 34,
+//                 text: label,
+//                 fontSize: 20,
+//                 fill: '#000',
+//             },
+//         });
+//
+//         if (hasChildren) {
+//             // collapse circle
+//             group.addShape('circle', {
+//                 attrs: {
+//                     x: rectConfig.width,
+//                     y: rectConfig.height / 2,
+//                     r: 8,
+//                     stroke: lightColor,
+//                     fill: collapsed ? lightColor : '#fff',
+//                     isCollapseShape: true,
+//                 },
+//             });
+//
+//             // collpase text
+//             group.addShape('text', {
+//                 attrs: {
+//                     x: rectConfig.width,
+//                     y: rectConfig.height / 2,
+//                     width: 16,
+//                     height: 16,
+//                     textAlign: 'center',
+//                     textBaseline: 'middle',
+//                     text: collapsed ? '+' : '-',
+//                     fontSize: 16,
+//                     fill: collapsed ? '#fff' : lightColor,
+//                     cursor: 'pointer',
+//                     isCollapseShape: true,
+//                 },
+//             });
+//         }
+//         this.drawLinkPoints(cfg, group);
+//         return rect;
+//     },
+//     update(cfg: any, item: any) {
+//         const group = item.getContainer();
+//         this.updateLinkPoints(cfg, group);
+//     },
+//     setState(name: any, value: any, item: any) {
+//         const group = item.getContainer();
+//         const shape = group.get('children')[0]; // 顺序根据 draw 时确定
+//         if(name === 'hover') {
+//             if(value) {
+//                 shape.attr('stroke', '#1890ff');
+//             } else {
+//                 shape.attr('stroke', '#ffffff');
+//             }
+//         }
+//         if (name === 'selected') {
+//             if(value) {
+//                 shape.attr('stroke', '#1890ff');
+//             } else {
+//                 shape.attr('stroke', '#ffffff');
+//             }
+//         }
+//     },
+//     getAnchorPoints() {
+//         return [
+//             [0, 0.5],
+//             [1, 0.5],
+//         ];
+//     },
+// },'rect');
+
+// G6.registerNode('flow-rect', {
+//     shapeType: 'flow-rect',
+//     draw: function drawShape(cfg: any, group: any) {
+//         const { name = '', lightColor, hasChildren, label, rate, collapsed } = cfg;
+//         const rectConfig = {
+//             width: 184,
+//             height: 74,
+//             lineWidth: 1,
+//             fontSize: 12,
+//             fill: '#fff',
+//             radius: 4,
+//             stroke: lightColor,
+//             opacity: 1,
+//         };
+//
+//         const textConfig = {
+//             textAlign: 'left',
+//             textBaseline: 'top',
+//         };
+//
+//         const rect = group.addShape('rect', {
+//             attrs: {
+//                 x: 0,
+//                 y: 0,
+//                 ...rectConfig,
+//             },
+//         });
+//         // label title
+//         group.addShape('text', {
+//             attrs: {
+//                 ...textConfig,
+//                 x: 12,
+//                 y: 8,
+//                 text: name.length > 10 ? name.substr(0, 10) + '...' : name,
+//                 fontSize: 14,
+//                 fill: '#000',
+//                 cursor: 'pointer',
+//                 isTitleShape: true,
+//             },
+//         });
+//
+//         // label count
+//         group.addShape('text', {
+//             attrs: {
+//                 ...textConfig,
+//                 x: 12,
+//                 y: 34,
+//                 text: label,
+//                 fontSize: 20,
+//                 fill: '#000',
+//             },
+//         });
+//
+//         // label percentage
+//         group.addShape('text', {
+//             attrs: {
+//                 ...textConfig,
+//                 x: 178,
+//                 y: 37,
+//                 text: `${((rate || 0) * 100).toFixed(2)}%`,
+//                 fontSize: 14,
+//                 textAlign: 'right',
+//                 fill: lightColor,
+//             },
+//         });
+//
+//
+//         const r = 2;
+//         const w = cfg.size[0];
+//         const h = cfg.size[1];
+//         console.log(w, '------', h, '======', cfg, '????', group);
+//         group.addShape('rect', {
+//             attrs: {
+//                 x: -w/2,
+//                 y: -h/2+1,
+//                 width: 3, //200,
+//                 height: h - 2, // 60
+//                 fill: cfg.color,
+//             },
+//             name: 'border-box',
+//             draggable: true,
+//         });
+//         group.addShape('image', {
+//             attrs: {
+//                 x: -w/2+15,
+//                 y: -h / 2 +10,
+//                 width: 18, //200,s
+//                 height: 18, // 60
+//                 color:'red',
+//                 img:
+//                     'https://gw.alipayobjects.com/zos/basement_prod/300a2523-67e0-4cbf-9d4a-67c077b40395.svg',
+//             },
+//             name: 'icon-box',
+//             draggable: true,
+//         });
+//         group.addShape('text', {
+//             attrs: {
+//                 textBaseline: 'center',
+//                 x: -w/2+40,
+//                 y: -h / 2 + 23,
+//                 shadowOffsetX: 140,
+//                 shadowOffsetY: -h/2+23,
+//                 text: cfg.name,
+//                 fill: '#000',
+//             },
+//         });
+//         this.drawLinkPoints(cfg, group);
+//         return rect;
+//     },
+//     update(cfg: any, item: any) {
+//         const group = item.getContainer();
+//         this.updateLinkPoints(cfg, group);
+//     },
+//     setState(name: any, value: any, item: any) {
+//         const group = item.getContainer();
+//         const shape = group.get('children')[0]; // 顺序根据 draw 时确定
+//         if(name === 'hover') {
+//             if(value) {
+//                 shape.attr('stroke', '#1890ff');
+//             } else {
+//                 shape.attr('stroke', '#ffffff');
+//             }
+//         }
+//         if (name === 'selected') {
+//             if(value) {
+//                 shape.attr('stroke', '#1890ff');
+//             } else {
+//                 shape.attr('stroke', '#ffffff');
+//             }
+//         }
+//     },
+//     getAnchorPoints() {
+//         return [
+//             [0, 0.5],
+//             [1, 0.5],
+//         ];
+//     },
+// },'rect');
+
+

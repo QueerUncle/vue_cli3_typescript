@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>放烟花——欣欣博客</title>
+    <style>
+        html,body{overflow:hidden;}
+        body,div,p{margin:0;padding:0;}
+        body{background:#000;font:12px/1.5 arial;color:#7A7A7A;}
+        .fire {
+            width: 3px;
+            height: 30px;
+            background: white;
+            position: absolute;
+        }
+        .spark {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+        }
+    </style>
+    <script src="move.js"></script>
+    <script>
+      /* eslint-disable */
+      window.οnlοad=function(){
+        document.οnclick=function(e){
+          e =e||event;
+          var coord ={
+            x:e.clientX,
+            y:e.clientY
+          };
+          new Fire(coord).init().launch();
+        }
+
+        function Fire(coord){
+          var self = this;
+          //初始化
+          this.init=function(){
+            this.ball = document.createElement("div");
+            this.ball.className="fire";
+            this.ball.style.left = coord.x+"px";
+            this.ball.style.top= window.innerHeight +"px";
+            document.body.appendChild(this.ball);
+            return this;
+          }
+          //发射
+          this.launch=function(){
+
+            animate(this.ball,{left:coord.x,top:coord.y,height:3},{callback:function(){
+                self.explode();
+              }});
+            return this;
+          }
+          //爆炸
+          this.explode=function(){
+            this.destory();
+            var count = randomInt(30,50);
+            for(var i =0;i<count;i++){
+              new Spark(coord).init().parabola();
+            }
+          }
+          //销毁
+          this.destory = function(){
+            this.ball.remove();
+          }
+        }
+        function Spark(coord){
+          var self = this;
+          this.init=function(){
+            this.box = document.createElement("div");
+            this.box.className="spark";
+            this.box.style.backgroundColor="#"+randomColor();
+            console.log(this.box.style.backgroundColor)
+            this.box.style.left = coord.x+"px";
+            this.box.style.top = coord.y+"px";
+            this.box.speedX = randomInt(-20,20);
+            this.box.speedY = randomInt(-20,10);
+            document.body.appendChild(this.box);
+            return this;
+          }
+          this.parabola=function(){
+
+            this.timer =setInterval(function(){
+              if(self.box.offsetTop >window.innerHeight){
+                clearInterval(self.timer);
+                self.destroy();
+                return;
+              }
+              self.box.style.left = self.box.offsetLeft + self.box.speedX +"px";
+              self.box.style.top = self.box.offsetTop +self.box.speedY++ +"px";
+
+            },30)
+
+          }
+          this.destory=function(){
+            this.box.remove();
+          }
+        }
+
+        //随机整数
+        function randomInt(min,max){
+          return Math.round(Math.random()*(max-min)+min);
+        }
+        //随机颜色
+        function randomColor(){
+          var R = Math.round( Math.random()*255 ).toString(16);
+          var G = Math.round( Math.random()*255 ).toString(16);
+          var B = Math.round( Math.random()*255 ).toString(16);
+          return (R.length<2?"0"+R:R) + (G.length<2?"0"+G:G)+ (B.length<2?"0"+B:B);
+        }
+        // eslint-disable-line
+
+            /* eslint-disable-line */
+
+      }
+    </script>
+</head>
+<body>
+</body>
+</html>

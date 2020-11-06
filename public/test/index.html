@@ -1,0 +1,58 @@
+<!--
+  @Author: lize
+  @Date: 2020/11/5
+  @Description :
+  @Parames :
+  @Example :
+  @Last Modified by: lize
+  @Last Modified time: 2020/11/5
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 1100px;
+            height: 500px;
+            background: #000;
+            border: 1px solid red;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .fire {
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            bottom: 0;
+        }
+        .small{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<div class = "audio-wrap"></div>
+</body>
+</html>
+<script src="./test.js"></script>
+<script src = "./audio.js"></script>
+<script>
+    window.onload = () => {
+      const audioWrap = document.querySelector('.audio-wrap');
+      for (let i = 0; i < oldList.length; i += 1) {
+        const audio = document.createElement('audio');
+        audio.controls = true;
+        audio.src = oldList[i];
+        audioWrap.appendChild(audio);
+      }
+    }
+</script>

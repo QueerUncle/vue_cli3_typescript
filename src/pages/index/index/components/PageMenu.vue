@@ -128,6 +128,21 @@
                 href:'',
                 router:'/BpmVue'
             },
+          {
+                title:'FlowTree.vue',
+                href:'',
+                router:'/FlowTree'
+            },
+          {
+                title:'SceneFrontTest.vue',
+                href:'',
+                router:'/SceneFrontTest'
+            },
+          {
+                title:'Fireworks.vue',
+                href:'',
+                router:'/Fireworks'
+            },
         ]
         created(): void{
             this.initialize();

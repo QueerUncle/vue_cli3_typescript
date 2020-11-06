@@ -17,5 +17,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     'no-useless-escape': 'off',
     '@typescript-eslint/no-inferrable-types': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
   }
 }

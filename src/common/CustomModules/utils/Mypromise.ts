@@ -173,12 +173,12 @@ const p1 = new MyPromise((resolve: any) =>{
 })
 p1
     .then((res: any) => {
-        console.log(res)
+        // console.log(res)
         return 2          //链式调用测试
     })
     .then()             //值穿透测试
     .then(res => {
-        console.log(res)
+        // console.log(res)
         return new MyPromise((resolve: any) => {
             resolve(3)      //返回Promise测试
         })

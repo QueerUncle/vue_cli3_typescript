@@ -1,0 +1,54 @@
+<!--
+  @Author: lize
+  @Date: 2020/11/6
+  @Description : html版本烟花
+  @Parames :
+  @Example :
+  @Last Modified by: lize
+  @Last Modified time: 2020/11/6
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fireworks</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .fireworks-wrap{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000000;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class = "fireworks-wrap">
+    <Button class="btn">意外的惊喜</Button>
+</div>
+<script src = "./Fireworks.js"></script>
+<script type="module">
+  // import Fireworks from "./Fireworks.js";
+  window.onload = () => {
+    const fireworksWrap = document.querySelector('.fireworks-wrap');
+    const btn = document.querySelector('.btn');
+    const fireworks = new Fireworks({
+      el: fireworksWrap,
+    });
+    btn.onclick = () => {
+      fireworks.create();
+    };
+  };
+</script>
+</body>
+</html>

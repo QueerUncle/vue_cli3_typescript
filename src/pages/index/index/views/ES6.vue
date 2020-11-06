@@ -93,7 +93,7 @@
             console.log(arr[-1]);
             this.proxyCreateDom();
             this.testClass();
-            console.log(this.add(1)(2)(3) + '', 'asdasdasdasdasda');
+            // console.log(this.add(1)(2)(3) + '', 'asdasdasdasdasda');
 
         }
 
@@ -190,8 +190,9 @@
                 constructor() {
                     super();
                     // this.x = 2;
-                    super.x = 3;
-                    console.log(this.x); // 3
+                    // super.x = 3; // esline-disable-line
+                  // 3
+                  //   console.log(this.x);  // esline-disable-line
                 }
             }
             const b = new B();

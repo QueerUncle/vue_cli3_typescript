@@ -17,8 +17,10 @@
 </template>
 
 <script lang="ts">
+/* eslint-disable*/
     import {Component, Vue} from 'vue-property-decorator';
-    import ProcessTree from 'process-tree-vue';
+    // import ProcessTree from 'process-tree-vue';
+    const { ProcessTree } = require('process-tree-vue');
 
     console.log(ProcessTree, 'ProcessTreeProcessTree');
 

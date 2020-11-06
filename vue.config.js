@@ -21,7 +21,7 @@ module.exports = {
   // 用于测试的代理服务
   devServer: {
     index: 'index-index.html',
-    // port: 8120,
+    port: 8120,
     // https: true,
     // proxy: 'http://10.80.2.11:8050/', //设计协同平台
       proxy:{

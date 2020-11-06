@@ -100,6 +100,21 @@ Vue.use(VueRouter)
       name: 'BpmVue',
       component: () => import("../views/BpmVue.vue")
     },
+    {
+      path: '/FlowTree',
+      name: 'FlowTree',
+      component: () => import("../views/FlowTree")
+    },
+    {
+      path: '/SceneFrontTest',
+      name: 'SceneFrontTest',
+      component: () => import("../views/SceneFrontTest.vue")
+    },
+    {
+      path: '/Fireworks',
+      name: 'Fireworks',
+      component: () => import("../views/Fireworks/Fireworks.vue")
+    },
 
 ]
 

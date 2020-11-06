@@ -28,3 +28,4 @@ declare namespace Global {
 declare module "cbimui";
 declare module "MessageConfig"
 declare module 'ProcessTreeVue';
+declare module 'process-tree-vue'
