@@ -22,6 +22,11 @@
                 </li>
                 <div class = "mock-wrap"></div>
             </ul>
+            <div @click = "startFn">开始</div>
+            <div @click = "EndFn">停止</div>
+            <div>
+              <span>{{}}:{{}}</span>
+            </div>
         </div>
     </div>
 </template>
@@ -61,6 +66,17 @@
                 title:'培训'
             }
         ]
+        private t = '00';
+        private d = 00;
+        private timer = null;
+        private startFn(){}
+        public EndFn(){
+
+        }
+        public wer(){
+            this.timer = setInterval(() => {
+            },1)
+        }
     }
 </script>
 

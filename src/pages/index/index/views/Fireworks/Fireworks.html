@@ -38,15 +38,11 @@
 </div>
 <script src = "./Fireworks.js"></script>
 <script type="module">
-  // import Fireworks from "./Fireworks.js";
   window.onload = () => {
     const fireworksWrap = document.querySelector('.fireworks-wrap');
     const btn = document.querySelector('.btn');
-    const fireworks = new Fireworks({
-      el: fireworksWrap,
-    });
     btn.onclick = () => {
-      fireworks.create();
+        new Fireworks({ el: fireworksWrap });
     };
   };
 </script>

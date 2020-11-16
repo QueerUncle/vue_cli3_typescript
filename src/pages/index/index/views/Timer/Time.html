@@ -1,0 +1,71 @@
+<!--
+  @Author: lize
+  @Date: 2020/11/15
+  @Description :
+  @Parames :
+  @Example :
+  @Last Modified by: lize
+  @Last Modified time: 2020/11/15
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>计时器</title>
+    <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+    <div class = "timer-wrap">
+        <div class = "btn-wrap">
+            <div class = "startBtn btn-item-wrap">开始</div>
+            <div class = "stopBtn btn-item-wrap">结束</div>
+            <div class = "resetBtn btn-item-wrap">重置</div>
+        </div>
+        <div class = "content-wrap">
+            <div class = "time-wrap">
+                <span class = "hourWrap time-num-wrap"></span>
+                <span>:</span>
+                <span class = "minutesWrap time-num-wrap"></span>
+                <span>:</span>
+                <span class = "secondsWrap time-num-wrap"></span>
+                <span>:</span>
+                <span class = "millisecondWrap time-num-wrap"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src = "time.js"></script>
+<script>
+    window.onload = function(){
+        const startBtn = document.querySelector('.startBtn');
+        const stopBtn = document.querySelector('.stopBtn');
+        const resetBtn = document.querySelector('.resetBtn');
+        const hourWrap = document.querySelector('.hourWrap');
+        const minutesWrap = document.querySelector('.minutesWrap');
+        const secondsWrap = document.querySelector('.secondsWrap');
+        const millisecondWrap = document.querySelector('.millisecondWrap');
+        // new一下类可以得到一个实例也就是一个object,你可以打印看看
+        // 在这里传入4个容器，分别时时分秒毫秒。假如你需要这么多，那么就传需要的。
+        const TimerInstance = new Timer({
+            hourWrap: hourWrap,
+            minutesWrap: minutesWrap,
+            secondsWrap: secondsWrap,
+            millisecondWrap: millisecondWrap,
+        })
+        // 点击开始按钮
+        startBtn.onclick = function(){
+            TimerInstance.start();
+        }
+        // 点击结束按钮
+        stopBtn.onclick = function(){
+            TimerInstance.stop();
+        }
+        // 点击重置按钮
+        resetBtn.onclick = function(){
+            TimerInstance.reset();
+        }
+    }
+</script>

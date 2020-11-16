@@ -29,3 +29,4 @@ declare module "cbimui";
 declare module "MessageConfig"
 declare module 'ProcessTreeVue';
 declare module 'process-tree-vue'
+declare module 'bpmn-js'

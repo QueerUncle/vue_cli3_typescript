@@ -31,6 +31,7 @@ class Fireworks {
 
   constructor(options) {
     this.wrap = options.el;
+    this.create();
   }
 
   // 创建烟花
