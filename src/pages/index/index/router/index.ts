@@ -115,6 +115,16 @@ Vue.use(VueRouter)
       name: 'Fireworks',
       component: () => import("../views/Fireworks/Fireworks.vue")
     },
+    {
+      path: '/Cssanimation',
+      name: 'Cssanimation',
+      component: () => import("../views/Cssanimation.vue")
+    },
+    {
+      path: '/CustomMonaco',
+      name: 'CustomMonaco',
+      component: () => import("../views/CustomMonaco.vue")
+    },
 
 ]
 

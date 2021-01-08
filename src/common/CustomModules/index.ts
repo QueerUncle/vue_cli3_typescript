@@ -11,9 +11,11 @@
 import UtilsTools from './utils/index';
 import MyPromise from './utils/Mypromise';
 import FlowChartShows from './FlowChartShows/index.vue'; // 流程图显示组件
+import MonacoEditor from './MonacoEditor/index.vue'; // 代码编辑器
 
 const components: any = {
     FlowChartShows,
+    MonacoEditor,
 }
 
 export {

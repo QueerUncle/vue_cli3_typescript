@@ -18,5 +18,6 @@ module.exports = {
     'no-useless-escape': 'off',
     '@typescript-eslint/no-inferrable-types': 'off',
     '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
   }
 }

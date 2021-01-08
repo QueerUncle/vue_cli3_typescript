@@ -9,21 +9,26 @@
  **/
 const path = require("path");
 const fs = require("fs");
+const analysisWord = require('../../analysisWrod/analysisWrod.js');
 module.exports = {
     UploadMethod(req, res){
         const files = req.files;
         const ids = [];
         for(let i = 0; i < files.length; i++) {
-            ids.push({
-                fileName:files[i].filename.split("|")[2],
-                downloadUrl:`http://127.0.0.1:3001/node/api/download?fileName=${files[i].filename}`
-            })
+            const filesPath = path.join(__dirname,`../files/${files[i].filename}`);
+            analysisWord.analysisWord(filesPath,(e) => {
+                ids.push({
+                    fileName:files[i].filename.split("|")[2],
+                    downloadUrl:`http://127.0.0.1:3001/node/api/download?fileName=${files[i].filename}`,
+                    content: e,
+                })
+            });
         }
         res.send({
             code: 200,
             success:true,
             data:{
-                desc: '成功导入'+files.length+ '张图片',
+                desc: '成功导入'+files.length+ '个文件',
                 ids:ids,
             }
         });

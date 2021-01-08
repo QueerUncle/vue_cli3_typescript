@@ -19,7 +19,10 @@
             <div>
                 <p>文件列表</p>
                 <ul>
-                    <li class = "ulLi" :key = "index" v-for = "(item,index) in uploadFiles" @click = "download(item)">{{item.fileName}}</li>
+                    <li class = "ulLi" :key = "index" v-for = "(item,index) in uploadFiles" @click = "download(item)">
+                      <span>{{item.fileName}}</span>
+                      <div>{{item.content.join()}}</div>
+                    </li>
                 </ul>
             </div>
         </div>

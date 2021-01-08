@@ -15,6 +15,7 @@
     "cbimui": "git+http://gitlab.cbim.org.cn/common/cbimui.git",
     "core-js": "^3.6.4",
     "iview-area": "^1.6.0",
+    "monaco-editor": "^0.21.2",
     "vue": "^2.6.11",
     "vue-bpmn": "^0.2.1",
     "vue-class-component": "^7.2.3",

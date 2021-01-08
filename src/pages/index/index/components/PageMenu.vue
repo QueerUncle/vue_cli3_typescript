@@ -143,6 +143,16 @@
                 href:'',
                 router:'/Fireworks'
             },
+          {
+            title:'Cssanimation.vue',
+            href:'',
+            router:'/Cssanimation'
+          },
+          {
+            title:'CustomMonaco.vue',
+            href:'',
+            router:'/CustomMonaco'
+          },
         ]
         created(): void{
             this.initialize();
