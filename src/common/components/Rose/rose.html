@@ -12,9 +12,17 @@
 <head>
     <title>Rose</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        html,body{
+            background: #000000;
+        }
+        #rose-wrap{
+            text-align: center
+        }
+    </style>
 </head>
-<body style="margin-left:200px">
-<div style="text-align: center" id = "rose-wrap"></div>
+<body>
+<div id = "rose-wrap"></div>
 <script src = "./Rose.js"></script>
 <script>
     const rose = new Rose(document.querySelector('#rose-wrap'));
