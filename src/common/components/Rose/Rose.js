@@ -16,19 +16,84 @@ class Rose {
     }
     this.el = el;
     this.options = options;
+    this.clientWidth = this.el.offsetWidth;
+    this.clientheight = this.el.offsetHeight;
+    console.log(this.clientWidth, this.clientheight);
+    // 创建玫瑰花画布
+    const roseDiv = document.createElement('div');
+    roseDiv.id = "rose-canvas-wrap";
+    roseDiv.style.width = '30%';
+    roseDiv.style.height = '100%';
+    roseDiv.style.display = 'flex';
+    roseDiv.style.alignItems = 'center';
+    roseDiv.style.justifyContent = "center";
     this.canvas = document.createElement('canvas');
+    this.canvas.id = "rose-canvas";
     this.context = this.canvas.getContext('2d');
     this.a = this.context;
     this.b = document.body;
     this.c = this.canvas;
     this.zBuffer = [];
-    this.SIZE = 777;
-    this.canvas.width = this.canvas.height = this.SIZE;
+    this.SIZE = this.clientheight * 0.6;
+    this.canvas.width = this.clientWidth * 0.6
+    this.canvas.height = this.clientheight;
     this.h = -350;
-    this.el.append(this.canvas);
+    roseDiv.append(this.canvas)
+    this.el.append(roseDiv); // 加入text画布
+    this.el.append(this.canvas); // 加入rose画布
     this.start();
-  }
 
+    // 创建文字camvas
+    if (this.options && this.options.text) {
+      const textDiv = document.createElement('div');
+      textDiv.id = "text-canvas-wrap";
+      textDiv.style.width = '30%';
+      textDiv.style.height = '100%';
+      textDiv.style.display = 'flex';
+      textDiv.style.alignItems = 'center';
+      textDiv.style.justifyContent = "center";
+      this.textCanvas = document.createElement('canvas');
+      this.textCanvas.id = 'text-rose';
+      this.textCanvas.width = this.clientWidth * 0.4
+      this.textCanvas.height = this.clientheight / 3;
+      this.textCanvasContext = this.textCanvas.getContext('2d');
+      textDiv.append(this.textCanvas)
+      this.el.append(textDiv); // 加入text画布
+      this.textAry = this.options.text.split('|');
+      this.line = 0;
+      this.timer = 0;
+      this.startIndex = 0;
+      this.newText = '';
+      this.typewriting();
+    }
+  }
+  typewriting() {
+    this.newText = this.textAry[this.line].slice(0, this.startIndex++) + '_';
+    // 擦除文字
+    this.textCanvasContext.clearRect(0, 20 + this.line * 30, 600, 20 + 30 * (this.line + 1));
+    const gradient = this.textCanvasContext.createLinearGradient(0, 0, 200, 0);
+    gradient.addColorStop("0", "magenta");
+    gradient.addColorStop("0.5", "blue");
+    gradient.addColorStop("1.0", "red");
+    this.textCanvasContext.fillStyle = gradient;
+    this.textCanvasContext.font = "20px Verdana";
+    this.textCanvasContext.textBaseline = "hanging";
+
+    if (this.startIndex > this.textAry[this.line].length) {
+      this.newText = this.textAry[this.line].slice(0, this.textAry[this.line].length);
+      this.textCanvasContext.fillText(this.newText, 30, 20 + 30 * this.line);
+      // 换行
+      this.startIndex = 0;
+      this.line++;
+      if (this.line < this.textAry.length) {
+        clearTimeout(this.timer);
+        this.typewriting();
+      }
+    } else {
+      this.textCanvasContext.fillText(this.newText, 30, 20 + 30 * this.line);
+      this.timer = setTimeout(() => this.typewriting(), 200);
+    }
+  }
   start(){
     setInterval(() => {
       for ( let i = 0; i < 10000; i++) {
