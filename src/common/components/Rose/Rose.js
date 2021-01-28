@@ -22,7 +22,7 @@ class Rose {
     // 创建玫瑰花画布
     const roseDiv = document.createElement('div');
     roseDiv.id = "rose-canvas-wrap";
-    roseDiv.style.width = '30%';
+    roseDiv.style.width = '45%';
     roseDiv.style.height = '100%';
     roseDiv.style.display = 'flex';
     roseDiv.style.alignItems = 'center';
@@ -35,26 +35,26 @@ class Rose {
     this.c = this.canvas;
     this.zBuffer = [];
     this.SIZE = this.clientheight * 0.6;
-    this.canvas.width = this.clientWidth * 0.6
+    this.canvas.width = this.clientWidth * 0.45
     this.canvas.height = this.clientheight;
     this.h = -350;
     roseDiv.append(this.canvas)
     this.el.append(roseDiv); // 加入text画布
-    this.el.append(this.canvas); // 加入rose画布
+    // this.el.append(this.canvas); // 加入rose画布
     this.start();
 
     // 创建文字camvas
     if (this.options && this.options.text) {
       const textDiv = document.createElement('div');
       textDiv.id = "text-canvas-wrap";
-      textDiv.style.width = '30%';
+      textDiv.style.width = '55%';
       textDiv.style.height = '100%';
       textDiv.style.display = 'flex';
       textDiv.style.alignItems = 'center';
       textDiv.style.justifyContent = "center";
       this.textCanvas = document.createElement('canvas');
       this.textCanvas.id = 'text-rose';
-      this.textCanvas.width = this.clientWidth * 0.4
+      this.textCanvas.width = this.clientWidth * 0.55
       this.textCanvas.height = this.clientheight / 3;
       this.textCanvasContext = this.textCanvas.getContext('2d');
       textDiv.append(this.textCanvas)
@@ -70,18 +70,18 @@ class Rose {
   typewriting() {
     this.newText = this.textAry[this.line].slice(0, this.startIndex++) + '_';
     // 擦除文字
-    this.textCanvasContext.clearRect(0, 20 + this.line * 30, 600, 20 + 30 * (this.line + 1));
+    this.textCanvasContext.clearRect(0, 50 + this.line * 50, 900, 50 + 50 * (this.line + 1));
     const gradient = this.textCanvasContext.createLinearGradient(0, 0, 200, 0);
     gradient.addColorStop("0", "magenta");
     gradient.addColorStop("0.5", "blue");
     gradient.addColorStop("1.0", "red");
     this.textCanvasContext.fillStyle = gradient;
-    this.textCanvasContext.font = "20px Verdana";
+    this.textCanvasContext.font = "40px Verdana";
     this.textCanvasContext.textBaseline = "hanging";
 
     if (this.startIndex > this.textAry[this.line].length) {
       this.newText = this.textAry[this.line].slice(0, this.textAry[this.line].length);
-      this.textCanvasContext.fillText(this.newText, 30, 20 + 30 * this.line);
+      this.textCanvasContext.fillText(this.newText, 50, 50 + 50 * this.line);
       // 换行
       this.startIndex = 0;
       this.line++;
@@ -90,7 +90,7 @@ class Rose {
         this.typewriting();
       }
     } else {
-      this.textCanvasContext.fillText(this.newText, 30, 20 + 30 * this.line);
+      this.textCanvasContext.fillText(this.newText, 50, 50 + 50 * this.line);
       this.timer = setTimeout(() => this.typewriting(), 200);
     }
   }
