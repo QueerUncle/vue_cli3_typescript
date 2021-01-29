@@ -153,6 +153,11 @@
             href:'',
             router:'/CustomMonaco'
           },
+          {
+            title:'CustomAntvG6.vue',
+            href:'',
+            router:'/CustomAntvG6'
+          },
         ]
         created(): void{
             this.initialize();

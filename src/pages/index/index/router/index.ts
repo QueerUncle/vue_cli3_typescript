@@ -125,6 +125,11 @@ Vue.use(VueRouter)
       name: 'CustomMonaco',
       component: () => import("../views/CustomMonaco.vue")
     },
+    {
+      path: '/CustomAntvG6',
+      name: 'CustomAntvG6',
+      component: () => import("../views/CustomAntvG6/CustomAntvG6.vue")
+    },
 
 ]
 
